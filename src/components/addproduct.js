@@ -68,7 +68,7 @@ class AddProduct extends React.Component {
         axios.post('http://localhost:3000/allproducts', productRequestBody)
                 .then(response=>{
                     console.log(response);
-                    this.props.history.push('/')
+                    this.props.history.push('/allproducts')
                 }, error=>{
                     console.error(error);
                 })

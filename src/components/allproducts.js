@@ -9,8 +9,10 @@ class AllProducts extends React.Component {
         super(props)
         this.state={
             products:[],
+            duplicateproducts:[],
             deleteSuccess: false,
-            myid: 0
+            myid: 0,
+            searchValue:''
         }
     }
 
@@ -23,7 +25,8 @@ class AllProducts extends React.Component {
                 .then(response=>{
                     console.log(response);
                     console.log(response.data)
-                    this.setState({products: response.data})
+                    this.setState({products: response.data,
+                                   duplicateproducts:response.data})
                     console.log(this.state.products);
                 }, error=>{
                     console.error(error);
@@ -74,11 +77,31 @@ class AllProducts extends React.Component {
                                     state: {myid: id}
                                 })
     }
+    getSearch=(e)=>{
+        let searchV = e.target.value
+        if(searchV===''){
+            this.getAllProducts()
+        }
+        this.setState({searchValue: searchV})
+        console.log(searchV);
+        let searchF = this.state.duplicateproducts.filter(product=>{
+                                return (product.name.toLowerCase().match(searchV.toLowerCase())||(product.category.toLowerCase().match(searchV.toLowerCase())))
+                            })
+        console.log(searchF);    
+        this.setState({products: searchF})                
+
+    }
     
     render() { 
         return (
             <div> 
             <Navbar></Navbar>
+            <div>
+                  
+                       <label>Search: </label>
+                       <input type="text" value={this.state.searchValue} onChange={this.getSearch}></input>
+                       <br></br>
+                   </div>
             <table style={{marginLeft: 9 +'%'}}>
                 <thead>
                     <tr>

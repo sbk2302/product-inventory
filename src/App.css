@@ -40,6 +40,25 @@
   border:1px solid azure;
   margin-right: 5px;
 }
+.navlink:hover{
+  text-decoration: none;
+  width:30%;
+  background-color: azure;
+  color: #000000;
+  font-size: 20px;
+  margin-top: 5px;
+  border:1px solid azure;
+  margin-right: 5px;
+}
+.logout{
+  text-decoration: none;
+  width:30%;
+  color: azure;
+  font-size: 20px;
+  margin-top: 5px;
+  border:1px solid azure;
+  margin-right: 5px;
+}
 
 .column1{
     font-family: Lato-Bold;
@@ -112,6 +131,46 @@
   padding-top: 18px;
   padding-bottom: 18px;
   width:9%;
+}
+.loginForm{
+  margin-top: 2%;
+  margin-bottom: 7%;
+  background-color: #dcedf3;
+  padding: 3%;
+  width: 50%;
+  margin-left: 20%;
+
+}
+.loginBtn{
+  background-image: linear-gradient(to right,#2f9ec5 0%,#6760d8 51%);
+  color: #fff;
+  width:12%;
+  border-radius: 8px;
+}
+.signupForm{
+  margin-top: 2%;
+  margin-bottom: 7%;
+  background-color: #dcedf3;
+  padding: 3%;
+  width: 50%;
+  margin-left: 20%;
+}
+.formLabel{
+  margin-left: 35%;
+  float: left;
+  margin-top: 2px;
+}
+.formInput{
+  margin-top: 2px;
+  margin-right: 28%;
+  float:right;
+}
+.formInput:focus{
+  margin-top: 2px;
+  margin-right: 28%;
+  float:right;
+  background-color: lightgoldenrodyellow;
+
 }
 @keyframes App-logo-spin {
   from {

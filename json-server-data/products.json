@@ -23,12 +23,38 @@
       "quantity": "45",
       "category": "Women footwear",
       "brand": "Red Tape"
+    },
+    {
+      "id": "89",
+      "name": "Black Shirt",
+      "price": "750",
+      "quantity": "56",
+      "category": "Men Clothing",
+      "brand": "Arrow"
     }
   ],
-  "userdetails":[
-	{
-		"username":"admin",
-		"password":"admin"
-	}
+  "duplicateproducts": [
+    {
+      "name": "White Shirt",
+      "price": "400",
+      "quantity": "50",
+      "category": "Men clothing",
+      "brand": "UCB",
+      "id": "2"
+    }
+  ],
+  "userdetails": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "firstname": "bharath",
+      "lastname": "kumar",
+      "username": "sbk@test.com",
+      "password": "test",
+      "id": "u1RuvyM"
+    }
   ]
 }

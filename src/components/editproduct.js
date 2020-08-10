@@ -84,7 +84,7 @@ class EditProduct extends React.Component {
         axios.put('http://localhost:3000/allproducts/'+this.state.id, productRequestBody)
                 .then(response=>{
                     console.log(response);
-                    this.props.history.push('/')
+                    this.props.history.push('/allproducts')
                 }, error=>{
                     console.error(error);
                 })

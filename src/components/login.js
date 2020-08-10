@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class Login extends React.Component {
 
@@ -8,7 +9,8 @@ class Login extends React.Component {
         this.state ={
             username:'',
             password:'',
-            users:[]
+            users:[],
+            uservalidate:true
             
         }
     }
@@ -44,7 +46,7 @@ class Login extends React.Component {
     }
 
     validateUser=()=>{
-        if(this.state.username===''||this.state.password===''){
+        if(JSON.stringify(this.state.username)===''||JSON.stringify(this.state.password)===''){
             alert("Please enter username/password")
         }else{
             let i=0;
@@ -54,9 +56,12 @@ class Login extends React.Component {
                 JSON.stringify(this.state.password)===JSON.stringify(allUsers[i].password)){
                          this.props.history.push('/home')
                      }else{
-                         alert("username/password incorrect")
-                     }
+                         this.setState({uservalidate: false})
+                           }
 
+            }
+            if(!this.state.uservalidate){
+                alert("username/password incorrect")
             }
 
         }
@@ -64,7 +69,7 @@ class Login extends React.Component {
 
     render() { 
         return (
-            <div>
+            <div className="loginForm">
                 <form>
                 <label>Username: </label>
                 <input type='text' id="username" onChange={this.getUsername}></input>
@@ -72,7 +77,9 @@ class Login extends React.Component {
                 <label>Password: </label>
                 <input type='password' id="password" onChange={this.getPassword}></input>
                 <br></br>
-                <button onClick={this.validateUser}>Submit</button>
+                <button className="loginBtn"onClick={this.validateUser}>Submit</button>
+                <br></br>
+                <Link to='/signup'>Sign Up</Link>
                 </form>
             </div>
           );
