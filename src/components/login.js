@@ -71,11 +71,11 @@ class Login extends React.Component {
         return (
             <div className="loginForm">
                 <form>
-                <label>Username: </label>
-                <input type='text' id="username" onChange={this.getUsername}></input>
+                <label className="formLabel">Username: </label>
+                <input className="formInput" type='text' id="username" onChange={this.getUsername}></input>
                 <br></br>
-                <label>Password: </label>
-                <input type='password' id="password" onChange={this.getPassword}></input>
+                <label className="formLabel">Password: </label>
+                <input  className="formInput" type='password' id="password" onChange={this.getPassword}></input>
                 <br></br>
                 <button className="loginBtn"onClick={this.validateUser}>Submit</button>
                 <br></br>

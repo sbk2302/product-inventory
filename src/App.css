@@ -172,6 +172,38 @@
   background-color: lightgoldenrodyellow;
 
 }
+.lastformInput{
+  margin-top: 2px;
+  margin-right: 28%;
+  float:right;
+}
+.lastformInput:focus{
+  margin-top: 2px;
+  margin-right: 28%;
+  float:right;
+  background-color: lightgoldenrodyellow;
+}
+.lastformInput::after{
+  clear: both;
+  display: block;
+}
+.addformLabel{
+  margin-left: 42%;
+  float: left;
+  margin-top: 2px;
+}
+.addformInput{
+  margin-top: 2px;
+  margin-right: 40%;
+  float:right;
+}
+.addformInput:focus{
+  margin-top: 2px;
+  margin-right: 40%;
+  float:right;
+  background-color: lightgoldenrodyellow;
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

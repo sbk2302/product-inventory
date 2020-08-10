@@ -79,23 +79,23 @@ class AddProduct extends React.Component {
             <div>
             <h3>Add New Product!!!!</h3>
             <form>
-                <label>Id: </label>
-                <input type='text' id="productid" onChange={this.getId}></input>
+                <label className="addformLabel">Id: </label>
+                <input className="addformInput" type='text' id="productid" onChange={this.getId}></input>
                 <br></br>
-                <label>Name: </label>
-                <input type='text' id="productname" onChange={this.getName}></input>
+                <label className="addformLabel">Name: </label>
+                <input  className="addformInput" type='text' id="productname" onChange={this.getName}></input>
                 <br></br>
-                <label>Price: </label>
-                <input type='number' id="productprice" onChange={this.getPrice}></input>
+                <label className="addformLabel">Price: </label>
+                <input  className="addformInput" type='number' id="productprice" onChange={this.getPrice}></input>
                 <br></br>
-                <label>Quantity: </label>
-                <input type='number' id="productquantity" onChange={this.getQuantity}></input>
+                <label className="addformLabel">Quantity: </label>
+                <input  className="addformInput" type='number' id="productquantity" onChange={this.getQuantity}></input>
                 <br></br>
-                <label>Category: </label>
-                <input type='text' id="productcategory" onChange={this.getCategory}></input>
+                <label className="addformLabel">Category: </label>
+                <input className="addformInput" type='text' id="productcategory" onChange={this.getCategory}></input>
                 <br></br>
-                <label>Brand: </label>
-                <input type='text' id="productbrand" onChange={this.getBrand}></input>
+                <label className="addformLabel">Brand: </label>
+                <input className="addformInput" type='text' id="productbrand" onChange={this.getBrand}></input>
                 <br></br>
                 <button type="button" onClick={this.addProduct}>Add Product</button>
                 <br></br>

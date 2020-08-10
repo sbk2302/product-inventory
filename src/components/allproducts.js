@@ -96,13 +96,13 @@ class AllProducts extends React.Component {
         return (
             <div> 
             <Navbar></Navbar>
-            <div>
+            <div style={{marginTop: 2+'%'}}>
                   
                        <label>Search: </label>
                        <input type="text" value={this.state.searchValue} onChange={this.getSearch}></input>
                        <br></br>
                    </div>
-            <table style={{marginLeft: 9 +'%'}}>
+            <table style={{marginLeft: 9 +'%',marginTop: 5 +'%'}}>
                 <thead>
                     <tr>
                         <th className="column1">Id</th>
