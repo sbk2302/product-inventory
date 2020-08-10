@@ -30,22 +30,89 @@
 .sidenav{
   background-color: #282c34;
   border: 1px solid royalblue;
-  float:left;
-  width: 15%;
-  height: 200px;
 }
 .navlink{
   text-decoration: none;
-  width:100%;
+  width:30%;
   color: azure;
   font-size: 20px;
   margin-top: 5px;
-}
-.navItem{
   border:1px solid azure;
-  margin-top: 5px;
+  margin-right: 5px;
 }
 
+.column1{
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #6c7ae0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 5%;
+    border-radius: 3px;
+}
+
+.column2{
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: #6c7ae0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width:8%;
+}
+.column3{
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: #6c7ae0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width:4%;
+}
+.column4{
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: #6c7ae0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width:6%;
+}
+.column5{
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: #6c7ae0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width:13%;
+}
+.column6{
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: #6c7ae0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width:6%;
+}
+.column7{
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: #6c7ae0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width:9%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,12 +1,12 @@
 import React from 'react';
-import SideNav from './sidenav';
+import Navbar from './nav';
 
 class Dashboard extends React.Component {
 
     render() { 
         return (
             <div> 
-            <SideNav></SideNav>
+            <Navbar></Navbar>
             <div>
             <h1 style={{marginTop: 0 + 'px'}}>This is dashboard page</h1>
             <hr></hr>

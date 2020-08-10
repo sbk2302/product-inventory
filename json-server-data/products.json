@@ -1,0 +1,34 @@
+{
+  "allproducts": [
+    {
+      "name": "White Shirt",
+      "price": "400",
+      "quantity": "50",
+      "category": "Men clothing",
+      "brand": "UCB",
+      "id": "2"
+    },
+    {
+      "name": "Black Trousers",
+      "price": "1000",
+      "quantity": "30",
+      "category": "Men clothing",
+      "brand": "Arrow",
+      "id": "5"
+    },
+    {
+      "id": "9",
+      "name": "Shoes",
+      "price": "900",
+      "quantity": "45",
+      "category": "Women footwear",
+      "brand": "Red Tape"
+    }
+  ],
+  "userdetails":[
+	{
+		"username":"admin",
+		"password":"admin"
+	}
+  ]
+}
