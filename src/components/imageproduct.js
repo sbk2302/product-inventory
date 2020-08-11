@@ -1,7 +1,6 @@
 import React from 'react';
 
-class ProductDetails extends React.Component {
-
+class Imageproduct extends React.Component {
     deleteCurrentProduct=()=>{
         console.log("delete product with id: " + this.props.id);
         this.props.deleteId(this.props.id)
@@ -18,24 +17,22 @@ class ProductDetails extends React.Component {
             borderRadius:'10px'
         }
         return (
-            <tr>
-                <td><img src={"images/" + this.props.profile} style={imgStyle} alt=""></img></td>
-                <td>{this.props.id} </td>
-                <td>{this.props.name} </td>
-                <td>{this.props.price}</td>
-                <td>{this.props.quantity}</td>
-                <td>{this.props.category}</td>
-                <td>{this.props.brand}</td>
-                <td>
+            <div>
+                <div><img src={"images/" + this.props.profile} style={imgStyle} alt=""></img></div>
+                <span>{this.props.id}</span>
+                <span>{this.props.name} </span>
+                <div><span>{this.props.price}</span>
+                <span>{this.props.quantity}</span></div>
+                <div><span>{this.props.category}</span>
+                <span>{this.props.brand}</span></div>
+                <div>
                     <button onClick={this.editProductWithId}>Edit</button>
-                </td>
-                <td>
                     <button onClick={this.deleteCurrentProduct}>Del</button>
-                </td>
+                </div>
                 
-            </tr>
+                </div>
           );
     }
 }
  
-export default ProductDetails;
+export default Imageproduct;

@@ -4,6 +4,7 @@
       "name": "White Shirt",
       "price": "400",
       "quantity": "50",
+      "image": "white-shirt.jpg",
       "category": "Men clothing",
       "brand": "UCB",
       "id": "2"
@@ -12,6 +13,7 @@
       "name": "Black Trousers",
       "price": "1000",
       "quantity": "30",
+      "image": "black-trousers.jpg",
       "category": "Men clothing",
       "brand": "Arrow",
       "id": "5"
@@ -21,6 +23,7 @@
       "name": "Shoes",
       "price": "900",
       "quantity": "45",
+      "image": "black-women-shoe.jpg",
       "category": "Women footwear",
       "brand": "Red Tape"
     },
@@ -29,6 +32,7 @@
       "name": "Black Shirt",
       "price": "750",
       "quantity": "56",
+      "image": "black-shirt.jpg",
       "category": "Men Clothing",
       "brand": "Arrow"
     },
@@ -37,6 +41,7 @@
       "name": "Shoes",
       "price": "450",
       "quantity": "25",
+      "image": "black-shoe-men.jpg",
       "category": "Women footwear",
       "brand": "Red Tape"
     }

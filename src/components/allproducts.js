@@ -2,6 +2,7 @@ import React from 'react';
 import axios  from "axios";
 import Navbar from './nav';
 import ProductDetail from './productdetail';
+import Imageproduct from './imageproduct';
 
 class AllProducts extends React.Component {
 
@@ -52,18 +53,18 @@ class AllProducts extends React.Component {
         return this.state.products.map(product=>{
             return(
               
-                    <ProductDetail
+                    <Imageproduct
                         key={product.id}
                         id={product.id}
                         name={product.name}
                         price={product.price}
                         quantity={product.quantity}
+                        profile={product.image}
                         category={product.category}
                         brand={product.brand}
                         deleteId={this.deleteProductWithId}
                         editId={this.editProductWithId}
-                    >
-                    </ProductDetail>
+                    ></Imageproduct>
                 
             )
         })
@@ -105,6 +106,7 @@ class AllProducts extends React.Component {
             <table style={{marginLeft: 9 +'%',marginTop: 5 +'%'}}>
                 <thead>
                     <tr>
+                        <th className="column1">img</th>
                         <th className="column1">Id</th>
                         <th className="column2">Name</th>
                         <th className="column3">Price</th>
@@ -114,9 +116,9 @@ class AllProducts extends React.Component {
                         <th colSpan="2" className="column7">Action</th>
                 </tr>
                 </thead>
-                <tbody>
+                
                     {this.renderAllProducts()}
-                </tbody>
+                
 
             </table>
             </div>
