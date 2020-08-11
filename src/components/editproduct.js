@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import Navbar from './nav';
 
 class EditProduct extends React.Component {
 
@@ -93,6 +94,7 @@ class EditProduct extends React.Component {
     render() { 
         return (  
             <div>
+                <Navbar></Navbar>
             <h3>Edit Product!!!!</h3>
             <form>
                 <label>Name: </label>

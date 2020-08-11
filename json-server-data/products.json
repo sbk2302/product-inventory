@@ -19,15 +19,6 @@
       "id": "5"
     },
     {
-      "id": "9",
-      "name": "Shoes",
-      "price": "900",
-      "quantity": "45",
-      "image": "black-women-shoe.jpg",
-      "category": "Women footwear",
-      "brand": "Red Tape"
-    },
-    {
       "id": "89",
       "name": "Black Shirt",
       "price": "750",
@@ -35,15 +26,6 @@
       "image": "black-shirt.jpg",
       "category": "Men Clothing",
       "brand": "Arrow"
-    },
-    {
-      "id": "56",
-      "name": "Shoes",
-      "price": "450",
-      "quantity": "25",
-      "image": "black-shoe-men.jpg",
-      "category": "Women footwear",
-      "brand": "Red Tape"
     }
   ],
   "duplicateproducts": [

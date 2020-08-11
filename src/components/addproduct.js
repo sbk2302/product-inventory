@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import Navbar from './nav';
 
 class AddProduct extends React.Component {
 
@@ -10,6 +11,7 @@ class AddProduct extends React.Component {
             productname:'',
             productprice:0,
             productquantity:0,
+            productimage:'',
             productcategory:'',
             productbrand:''
             
@@ -73,10 +75,18 @@ class AddProduct extends React.Component {
                     console.error(error);
                 })
     }
+    getImage=(event)=>{
+        console.log(event);
+        console.log(event.target);
+        console.log(event.target.value);
+        console.log(event.target.value.substr(12));
+        this.setState({productimage: event.target.value.substr(12)})
+    }
 
     render() { 
         return ( 
             <div>
+                <Navbar></Navbar>
             <h3>Add New Product!!!!</h3>
             <form>
                 <label className="addformLabel">Id: </label>
@@ -90,6 +100,9 @@ class AddProduct extends React.Component {
                 <br></br>
                 <label className="addformLabel">Quantity: </label>
                 <input  className="addformInput" type='number' id="productquantity" onChange={this.getQuantity}></input>
+                <br></br>
+                <label className="addformLabel">Product Image: </label>
+                <input type="file" onChange={this.getImage} multiple accept='image/*' style={{marginRight: 33+'%'}}/>
                 <br></br>
                 <label className="addformLabel">Category: </label>
                 <input className="addformInput" type='text' id="productcategory" onChange={this.getCategory}></input>

@@ -53,7 +53,7 @@ class AllProducts extends React.Component {
         return this.state.products.map(product=>{
             return(
               
-                    <Imageproduct
+                    <ProductDetail
                         key={product.id}
                         id={product.id}
                         name={product.name}
@@ -64,7 +64,7 @@ class AllProducts extends React.Component {
                         brand={product.brand}
                         deleteId={this.deleteProductWithId}
                         editId={this.editProductWithId}
-                    ></Imageproduct>
+                    ></ProductDetail>
                 
             )
         })
@@ -103,7 +103,7 @@ class AllProducts extends React.Component {
                        <input type="text" value={this.state.searchValue} onChange={this.getSearch}></input>
                        <br></br>
                    </div>
-            <table style={{marginLeft: 9 +'%',marginTop: 5 +'%'}}>
+            <table style={{marginLeft: 4 +'%',marginTop: 5 +'%',marginRight: 4 +'%'}}>
                 <thead>
                     <tr>
                         <th className="column1">img</th>

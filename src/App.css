@@ -68,7 +68,7 @@
     background-color: #6c7ae0;
     padding-top: 18px;
     padding-bottom: 18px;
-    width: 5%;
+    width: 4%;
     border-radius: 3px;
 }
 
@@ -80,7 +80,7 @@
   background-color: #6c7ae0;
   padding-top: 18px;
   padding-bottom: 18px;
-  width:8%;
+  width:6%;
 }
 .column3{
   font-family: Lato-Bold;
@@ -110,7 +110,7 @@
   background-color: #6c7ae0;
   padding-top: 18px;
   padding-bottom: 18px;
-  width:13%;
+  width:10%;
 }
 .column6{
   font-family: Lato-Bold;
@@ -130,7 +130,7 @@
   background-color: #6c7ae0;
   padding-top: 18px;
   padding-bottom: 18px;
-  width:9%;
+  width:8%;
 }
 .loginForm{
   margin-top: 2%;
@@ -188,7 +188,7 @@
   display: block;
 }
 .addformLabel{
-  margin-left: 42%;
+  margin-left: 40%;
   float: left;
   margin-top: 2px;
 }
